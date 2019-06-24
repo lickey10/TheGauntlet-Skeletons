@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement_Forward.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PlayerMovement_Forward.cs" Line="46" Column="17" />
+      <File FileName="Assets\Scripts\BikeControl2.js" Line="112" Column="3" />
+      <File FileName="Assets\Endless2DTerrain\Core\Scripts\PrefabRule.cs" Line="51" Column="72" />
+      <File FileName="Assets\Endless2DTerrain\Core\Scripts\PrefabPool.cs" Line="41" Column="94" />
+      <File FileName="Assets\Scripts\gamestart.cs" Line="35" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\utilities\Programming\Unity\MyProjects\Zombie sideScroller\Assets\Scripts\PlayerMovement_Forward.cs" line="94" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
