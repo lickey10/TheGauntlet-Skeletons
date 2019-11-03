@@ -37,7 +37,7 @@ public class PauseMenuScript : MonoBehaviour {
 				displayMenu = true;
 
 				try {
-					AudioSource backgroundMusic = (AudioSource)GameObject.Find("backgroud music").audio;
+					AudioSource backgroundMusic = (AudioSource)GameObject.Find("backgroud music").GetComponent<AudioSource>();
 					backgroundMusic.Pause ();
 					backgroundMusic.transform.localScale = new Vector3(backgroundMusic.time,0,0);
 				} catch (System.Exception ex) {
@@ -46,7 +46,7 @@ public class PauseMenuScript : MonoBehaviour {
 			}
 			else
 			{
-				AudioSource backgroundMusic = (AudioSource)GameObject.Find("backgroud music").audio;
+				AudioSource backgroundMusic = (AudioSource)GameObject.Find("backgroud music").GetComponent<AudioSource>();
 				backgroundMusic.Play ();
 				backgroundMusic.time = backgroundMusic.transform.localScale.x;
 
@@ -87,7 +87,7 @@ public class PauseMenuScript : MonoBehaviour {
 				displayMenu = false;
 
 				try {
-					AudioSource backgroundMusic = (AudioSource)GameObject.Find("backgroud music").audio;
+					AudioSource backgroundMusic = (AudioSource)GameObject.Find("backgroud music").GetComponent<AudioSource>();
 					backgroundMusic.Play ();
 					backgroundMusic.time = backgroundMusic.transform.localScale.x;
 				} catch (System.Exception ex) {

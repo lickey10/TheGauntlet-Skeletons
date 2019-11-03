@@ -29,8 +29,8 @@ public class ScoreAndLives : MonoBehaviour {
 		if(thePlayer != null)
 		{
 			//send them flying off the right of the screen
-			thePlayer.rigidbody2D.velocity = Vector2.zero;
-			thePlayer.rigidbody2D.AddForce(new Vector2(300, 0));
+			thePlayer.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			thePlayer.GetComponent<Rigidbody2D>().AddForce(new Vector2(300, 0));
 		}
 	}
 

@@ -20,8 +20,8 @@ public class PlayerMovement_Forward : MonoBehaviour
             playerCamera = Camera.main;
         }
 
-		animation["flip"].layer = 1;
-		animation["death"].layer = 1;
+		GetComponent<Animation>()["flip"].layer = 1;
+		GetComponent<Animation>()["death"].layer = 1;
 		//animation["attack"].layer = 1;
 
         playerCamera.transparencySortMode = TransparencySortMode.Perspective;
@@ -46,7 +46,7 @@ public class PlayerMovement_Forward : MonoBehaviour
 				if(jumps < 3)
 				{
 					jumps++;
-					animation.Play("flip");
+					GetComponent<Animation>().Play("flip");
 					
 					moveDirection.y = jumpSpeed;
 				}
@@ -75,14 +75,14 @@ public class PlayerMovement_Forward : MonoBehaviour
 			}
 			else
 			{
-				animation.Play("death");
-				col.animation["die"].layer = 1;
-				col.animation.Play("die");
+				GetComponent<Animation>().Play("death");
+				col.GetComponent<Animation>()["die"].layer = 1;
+				col.GetComponent<Animation>().Play("die");
 				dead = true;
-				animation.Stop("run");
-				animation.Stop("attack");
-				col.animation.Stop("run");
-				col.animation.Stop("attack");
+				GetComponent<Animation>().Stop("run");
+				GetComponent<Animation>().Stop("attack");
+				col.GetComponent<Animation>().Stop("run");
+				col.GetComponent<Animation>().Stop("attack");
 
 				SoundEffectsHelper.Instance.MakeDyingSound();
 			}

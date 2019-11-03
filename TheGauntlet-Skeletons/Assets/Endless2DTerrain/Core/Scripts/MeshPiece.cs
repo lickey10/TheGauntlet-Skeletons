@@ -149,19 +149,19 @@ namespace Endless2DTerrain
 
             if (PlaneType == Plane.Front && settings.MainMaterial !=null)
             {
-                meshRenderer.renderer.sharedMaterial = settings.MainMaterial;
-                meshRenderer.renderer.sharedMaterial.renderQueue = RenderQueue.FrontPlane;
+                meshRenderer.GetComponent<Renderer>().sharedMaterial = settings.MainMaterial;
+                meshRenderer.GetComponent<Renderer>().sharedMaterial.renderQueue = RenderQueue.FrontPlane;
                
             }
             if (PlaneType == Plane.Detail && settings.DetailMaterial !=null)
             {
-                meshRenderer.renderer.sharedMaterial = settings.DetailMaterial;
-                meshRenderer.renderer.sharedMaterial.renderQueue = RenderQueue.DetailPlane;
+                meshRenderer.GetComponent<Renderer>().sharedMaterial = settings.DetailMaterial;
+                meshRenderer.GetComponent<Renderer>().sharedMaterial.renderQueue = RenderQueue.DetailPlane;
               
             }
             if (PlaneType == Plane.Top && settings.DrawTopMeshRenderer && settings.TopMaterial !=null)
             {
-                meshRenderer.renderer.sharedMaterial = settings.TopMaterial;
+                meshRenderer.GetComponent<Renderer>().sharedMaterial = settings.TopMaterial;
             }
 
 
